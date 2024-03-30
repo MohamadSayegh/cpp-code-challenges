@@ -16,6 +16,27 @@ int main(){
     std::cin >> n;
 
     // Write your code here
+    if (n==1) {
+        std::cout<<"Sequence: "<<1<<std::endl;
+    }
+    else{
+        int itr = 1;
+        while (itr<n){
+            if (itr%3==0 && itr%5==0){
+                std::cout<<" FizzBuzz "<<std::endl;
+            }
+            else if (itr%3==0){
+                std::cout<<" Fizz "<<std::endl;
+            }
+            else if (itr%5==0){
+                std::cout<<" Buzz "<<std::endl;
+            }
+            else{
+                std::cout<<itr<<std::endl;
+            }
+            itr++;
+        }
+    }
     
     std::cout << std::endl << std::flush;
     return 0;
